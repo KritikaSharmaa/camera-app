@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Camera</title>
+</head>
+<body>
+    <div class="filters">
+        <div class="filter" style="background-color: rgba(46, 45, 45, 0.308); "></div>
+        <div class="filter" style="background-color: rgba(247, 197, 132, 0.24); "></div>
+        <div class="filter" style="background-color: rgba(216, 79, 198, 0.308); "></div>
+        <div class="filter" style="background-color: rgba(129, 212, 103, 0.308); "></div>
+        <div class="filter" style="background-color: rgba(25, 128, 160, 0.308); "></div>
+        <div class="filter" style="background-color: rgba(206, 127, 124, 0.308); "></div>
+        <div class="filter" style="background-color: rgba(62, 78, 218, 0.308); "></div>
+    </div>
+    <!--WHY DO WE NEED VIDEO CONTAINER?? ==> Bcz its not possible to zoom image with webcam(hardware) so we cant strech images/frames sp  instead we give 100vh and 100vw to video container and allow video to take space according to its resolution-->
+    <div class="video_container">
+        <video autoplay></video>
+    </div>
+    <div class="zoom">
+        <span class="material-icons zoomIn">add</span>
+        <span class="material-icons zoomOut">remove</span>
+    </div>
+    <button id="record"><span></span></button>
+    <button id="capture"></button>
+
+    <button id="gallery">
+        <img src="https://www.clipartmax.com/png/full/53-537520_sun-sea-beach-holidays-camping-travel-icon-beach-icon-png.png">
+        <p>Gallery</p>
+    </button>
+    <script src="./IndexedDBScript.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
